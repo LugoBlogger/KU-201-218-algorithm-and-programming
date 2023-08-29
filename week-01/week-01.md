@@ -4,7 +4,7 @@
 - Mahasiswa mampu menjelaskan prinsip algoritma dan dasar Python
 
 
-**Sub-topik yang akan dipelajari**:
+### Sub-topik yang akan dipelajari
 - [1.1 Algoritma](#11-algoritma)
 - [1.2 Arsitektur Komputer](#12-arsitektur-komputer)
 - [1.3 Pengantar Python](#13-pengantar-python)
@@ -36,7 +36,7 @@ perkuliahan:
 11. _Graphical User Interfacee_ (GUI)
 12. `PyQt`
 
-## 1.1 Algoritma
+## [1.1 Algoritma](#sub-topik-yang-akan-dipelajari)
 
 - **Algoritma**:   
   Tahapan instruksi yang jelas yang dirancang untuk 
@@ -169,13 +169,13 @@ Secara garis besar, algorithma memiliki struktur sebagai berikut:
   Kegiatan mengerjakan sebuah atau sejumlah aksi yang sama 
   sebanyak jumlah yang ditentukan atau sesuai dengan kondisi yang diinginkan
 
-  Contoh: (algoritma penambahan bilanan 1 dengan 1 sebanyak 8 kali)
+  Contoh: (algoritma penambahan bilangan 1 dengan 1 sebanyak 8 kali)
   1. Atur nilai `x` menjadi 1
   2. Tambahkan nilai `x` saat ini dengan 1 
   3. Ketika `x` kurang dari 10, lakukan langkah (ii) 
   4. Selesai.
 
-## 1.2 Arsitektur Komputer
+## [1.2 Arsitektur Komputer](#sub-topik-yang-akan-dipelajari)
 Merupakan denah atau gambaran komponen secara garis besar bagaimana
 komputer dibangun.
 
@@ -195,9 +195,13 @@ Berikut komponen-komponen dalam suatu arsitektur komputer
    media yang menghubungkan suatu komputer dengan komputer yang lain
 
 
-## 1.3 Pengantar Python
+## [1.3 Pengantar Python](#sub-topik-yang-akan-dipelajari)
+Di praktikum kita menggunakan PyChart, 
+namun dapat juga menggunakan VSCode
+dengan program Python yang disediakan 
+oleh Anaconda.
 
-## 1.4 _Interpreter_ dan _Compiler_
+## [1.4 _Interpreter_ dan _Compiler_](#sub-topik-yang-akan-dipelajari)
 
 - _**Interpreter**_:      
   Program komputer yang berfungsi melakukan eksekusi pada sejumlah instruksi  

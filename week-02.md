@@ -47,10 +47,30 @@ PyCharm, silahkan menggunakan PyCharm.
 
 ### Perbandingan algoritma dan _pseudocode_
 
+<table width="300">
+  <tr>
+    <td> <b>Algoritma</b> 
+    <td> <b><i>Pseudocode</i></b> 
+  <tr>
+    <td> <code>A</code> adalah nilai <code>A</code> lama ditambah dengan 5
+    <td> <code>A <- A + 5 </code>
+  <tr>
+    <td> Cetak nilai <code>A</code> bila lebih besar dari 10
+    <td> <code>IF A > 10</code><br>
+         <code>  THEN PRINT A</code>
+  <tr>
+    <td> Dari dua bilangan <code>A</code> dan <code>B</code>,
+         cetak bilangan terbesar
+    <td> <code>IF A > B</code><br>
+         <code>  THEN PRINT A</code><br>
+         <code>ELSE</code><br>
+         <code>  PRINT B</code>
+</table>
 | Algoritma                | _Pseudocode_|
 |--------------------------|-------------|
 | `A` adalah nila `A` lama ditambah dengan 5 | `A <- A + 5` |
-| Cetak nilai `A` bila lebih besar dari 10   | `IF A > 10`<br>`  THEN PRINT A`|
+| Cetak nilai `A` bila lebih besar dari 10   | ```
+IF A > 10`<br>`  THEN PRINT A`|
 
 
 
