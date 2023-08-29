@@ -66,13 +66,6 @@ PyCharm, silahkan menggunakan PyCharm.
          <code>ELSE</code><br>
          <code>  PRINT B</code>
 </table>
-| Algoritma                | _Pseudocode_|
-|--------------------------|-------------|
-| `A` adalah nila `A` lama ditambah dengan 5 | `A <- A + 5` |
-| Cetak nilai `A` bila lebih besar dari 10   | ```
-IF A > 10`<br>`  THEN PRINT A`|
-
-
 
 ### Sintaksis _pseudocode_
 
@@ -169,3 +162,6 @@ merepresentasikan komponen-komponen suatu bahasa pemrograman.
 - Hitung `aSq = a * a`
 - Hitung `bSq = b * b`
 - Hitung `c = sqrt(a^2 + b^2)` (rumus Pythagoras)
+
+**_Flowchart_**    
+<img src="figures/temperature-conversion.drawio.png" width=150>
