@@ -18,7 +18,7 @@ PyCharm. Jika spesifikasi komputer cukup untuk menjalankan
 PyCharm, silahkan menggunakan PyCharm.
 
 
-## [2.1 Pseudocode](#sub-topik-yang-akan-dipelajari)
+## [2.1 _Pseudocode_](#sub-topik-yang-akan-dipelajari)
 
 - Kode atau tanda yang menyerupai (_pseudo_) program atau 
   merupakan penjelasan cara menyelesaikan suatu masalah
