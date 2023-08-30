@@ -95,7 +95,7 @@ ELSE
 Jika input `x = 15`, `y = 20`, dan `z = 5`, maka outputnya adalah 
 `PRINT z`
 
-### _Pseudocode_ dengan perulangan
+### Contoh 2: _Pseudocode_ dengan perulangan
 
 ```
 SET count <- 1
