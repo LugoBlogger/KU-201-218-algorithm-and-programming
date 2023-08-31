@@ -1,7 +1,6 @@
 # Pertemuan Minggu 01
 
-**Tujuan**:
-- Mahasiswa mampu menjelaskan prinsip algoritma dan dasar Python
+**Tujuan**: Mahasiswa mampu menjelaskan prinsip algoritma dan dasar Python
 
 
 ### Sub-topik yang akan dipelajari

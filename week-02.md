@@ -69,7 +69,7 @@ PyCharm, silahkan menggunakan PyCharm.
 
 ### Sintaksis _pseudocode_
 
-- Menerima input: **READ**, **GET**
+- Menerima input: **READ**, **GET**, **INPUT**
 - Menampilkan output: **DISPLAY**, **PRINT**, **WRITE**, **SHOW**
 - Aritmatika: `+`, `-`, `*`, `/`, `%`, `div`, `sub`, `mul`, `add`
 - Pemberian nilai (_assignment_); **SET** `nama_variable <- nilai`
