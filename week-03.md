@@ -150,7 +150,7 @@ ELSE
 
 ### _Flowchart_
 
-<img src="./figures/if-else-nested.drawio.png" width=600>
+<img src="./figures/if-else-nested.drawio.png" width=1000>
 
 ### Contoh
 
