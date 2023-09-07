@@ -164,7 +164,7 @@ Secara garis besar, algorithma memiliki struktur sebagai berikut:
   4. Cetak nilai `x`
   5. Selesai
 
-- Pengulangan (_repetition_):     
+- Perulangan (_repetition_):     
   Kegiatan mengerjakan sebuah atau sejumlah aksi yang sama 
   sebanyak jumlah yang ditentukan atau sesuai dengan kondisi yang diinginkan
 

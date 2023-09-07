@@ -1,4 +1,4 @@
-# Pertemuan Minggu 04
+# Pertemuan Minggu 04 dan 05
 
 **Tujuan**: Mahasiswa mampu membuat algoritma, diagram alir, dan
 _pseudocode_ perulangan dan mengimplementasikannya dengan Python
@@ -8,6 +8,10 @@ _pseudocode_ perulangan dan mengimplementasikannya dengan Python
 - Diagram alir perulangan dengan percabangan
 - _Pseudocode_ `WHILE`
 - Kode program Python dengan `WHILE`
+
+## 4.1 Perulangan
+
+**Perulangan** adalah struktur algoritma
 
 **Contoh permasalahan**
 
@@ -68,7 +72,7 @@ for angka in range(1, 101):
   print(angka)
 ```
 
-4.1 Perulangan `FOR ... DO`
+## 4.1 Perulangan `FOR ... DO`
 
 **_Pseudocode_**
 ```
@@ -78,6 +82,8 @@ END FOR
 ```
 
 **_Flowchart_**
+
+<img src="../figures/for-loop.drawio.png" width=400>
 
 Implementasi Python
 ```py
