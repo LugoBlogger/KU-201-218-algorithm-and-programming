@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2023-09-13T11:06:50.710Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.5.0 Chrome/112.0.5615.204 Electron/24.5.1 Safari/537.36" etag="8Wc0HIDG-at4khb1LUbZ" version="21.5.0" type="device">
+<mxfile host="Electron" modified="2023-09-13T11:13:24.900Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.5.0 Chrome/112.0.5615.204 Electron/24.5.1 Safari/537.36" etag="GcvHDakSWVL5G6iQT0mN" version="21.5.0" type="device">
   <diagram name="Page-1" id="3HdvslZvVY760rjLvyFB">
-    <mxGraphModel dx="1147" dy="426" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1274" dy="675" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -414,23 +414,88 @@
         <mxCell id="vdJaGnublRpIZeJsuwhY-22" value="&lt;font data-font-src=&quot;https://fonts.googleapis.com/css?family=Roboto+Mono&quot; face=&quot;Roboto Mono&quot;&gt;START&lt;/font&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="240" y="1520" width="80" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="vdJaGnublRpIZeJsuwhY-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="vdJaGnublRpIZeJsuwhY-27" target="vdJaGnublRpIZeJsuwhY-35">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="1880" />
+              <mxPoint x="280" y="1880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vdJaGnublRpIZeJsuwhY-43" value="TRUE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="vdJaGnublRpIZeJsuwhY-36">
+          <mxGeometry x="-0.3428" relative="1" as="geometry">
+            <mxPoint y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vdJaGnublRpIZeJsuwhY-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="vdJaGnublRpIZeJsuwhY-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="1720" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="140" y="1840" />
+              <mxPoint x="140" y="1720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vdJaGnublRpIZeJsuwhY-45" value="FALSE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="vdJaGnublRpIZeJsuwhY-44">
+          <mxGeometry x="-0.8299" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="vdJaGnublRpIZeJsuwhY-27" value="&lt;font face=&quot;Roboto Mono&quot;&gt;number &amp;lt;= n&lt;/font&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="210" y="1800" width="140" height="70" as="geometry" />
+          <mxGeometry x="210" y="1810" width="140" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vdJaGnublRpIZeJsuwhY-28" value="&lt;font data-font-src=&quot;https://fonts.googleapis.com/css?family=Roboto+Mono&quot; face=&quot;Roboto Mono&quot;&gt;STOP&lt;/font&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="240" y="2010" width="80" height="40" as="geometry" />
+          <mxGeometry x="240" y="2100" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vdJaGnublRpIZeJsuwhY-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vdJaGnublRpIZeJsuwhY-30" target="vdJaGnublRpIZeJsuwhY-31">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vdJaGnublRpIZeJsuwhY-30" value="&lt;font data-font-src=&quot;https://fonts.googleapis.com/css?family=Roboto+Mono&quot; face=&quot;Roboto Mono&quot;&gt;n: INTEGER&lt;br&gt;number: INTEGER&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="210" y="1590" width="140" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="vdJaGnublRpIZeJsuwhY-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vdJaGnublRpIZeJsuwhY-31" target="vdJaGnublRpIZeJsuwhY-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="vdJaGnublRpIZeJsuwhY-31" value="&lt;font data-font-src=&quot;https://fonts.googleapis.com/css?family=Roboto+Mono&quot; face=&quot;Roboto Mono&quot;&gt;READ n&lt;/font&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
           <mxGeometry x="230" y="1660" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="vdJaGnublRpIZeJsuwhY-33" value="&lt;font face=&quot;Roboto Mono&quot;&gt;number = 1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="210" y="1730" width="140" height="40" as="geometry" />
+        <mxCell id="vdJaGnublRpIZeJsuwhY-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="vdJaGnublRpIZeJsuwhY-33" target="vdJaGnublRpIZeJsuwhY-27">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="vdJaGnublRpIZeJsuwhY-34" value="&lt;font face=&quot;Roboto Mono&quot;&gt;number = 1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="210" y="1900" width="140" height="40" as="geometry" />
+        <mxCell id="vdJaGnublRpIZeJsuwhY-33" value="&lt;font face=&quot;Roboto Mono&quot;&gt;number = 1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="210" y="1740" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vdJaGnublRpIZeJsuwhY-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vdJaGnublRpIZeJsuwhY-35" target="vdJaGnublRpIZeJsuwhY-37">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="2010" />
+              <mxPoint x="280" y="2010" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vdJaGnublRpIZeJsuwhY-46" value="TRUE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="vdJaGnublRpIZeJsuwhY-41">
+          <mxGeometry x="-0.3645" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vdJaGnublRpIZeJsuwhY-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="vdJaGnublRpIZeJsuwhY-35">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="1840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vdJaGnublRpIZeJsuwhY-48" value="FALSE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="vdJaGnublRpIZeJsuwhY-47">
+          <mxGeometry x="-0.7367" relative="1" as="geometry">
+            <mxPoint x="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vdJaGnublRpIZeJsuwhY-35" value="&lt;font face=&quot;Roboto Mono&quot;&gt;number % 2 == 1&lt;/font&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="210" y="1910" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vdJaGnublRpIZeJsuwhY-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="vdJaGnublRpIZeJsuwhY-37" target="vdJaGnublRpIZeJsuwhY-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vdJaGnublRpIZeJsuwhY-37" value="&lt;font data-font-src=&quot;https://fonts.googleapis.com/css?family=Roboto+Mono&quot; face=&quot;Roboto Mono&quot;&gt;PRINT number&lt;/font&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="200" y="2030" width="160" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
