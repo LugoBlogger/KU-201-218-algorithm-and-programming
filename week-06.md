@@ -6,7 +6,7 @@
 ### Subtopik yang akan dipelajari
 
 ## Definisi _array_
-- _Array_ adalah kumpulan dari nilai-nilai data bertiple
+- _Array_ adalah kumpulan dari nilai-nilai data bertile
   sama dalam urutan tertentu yang menggunakan sebuah nama
   yang sama.
 - Nilai-nilai data di suatu _array_ disebut dengan elemen-element
