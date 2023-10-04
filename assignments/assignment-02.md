@@ -90,7 +90,7 @@ emerald = 16
 ## Problem 5: CLI histogram 1
 Diberikan suatu data _inventory_ beberapa _materials_ di dalam _video game_
 _Mineraft_ sebagai berikut, 
-yang dinyatakan dalam bentk _dict_ Python
+yang dinyatakan dalam bentuk _dict_ Python
 ```py
 inventory = {
   "Emerald": 2,
@@ -120,7 +120,7 @@ Snowball:
    Flint: ****
 ```
 
-Jumlha tanda bintang `*` menyatakan banyaknya _materials_. Misal
+Jumlah tanda bintang `*` menyatakan banyaknya _materials_. Misal
 `"Flint": 4` maka akan tercetak empat kali tanda bintang `****`.
 Perhatikan juga nama _materials_ memiliki kesejajaran (_alignment_)
 rata-rata kanan dan ada satu spasi setelah `:`.
@@ -132,7 +132,7 @@ Melanjutkan Problem 5, tambahkan beberapa fitur berikut:
 1. Masukan oleh _user_ `lebar_max` dengan type data `int` 
    untuk membatasi lebar histogram.   
  
-   $`lebar_max` ini menyatakan berapa banyak tanda bintang `*`
+   `lebar_max` ini menyatakan berapa banyak tanda bintang `*`
    yang harus dicetak untuk _materials_ dengan jumlah terbanyak.   
 
    Misalkan _material_ terbanyak `"Diamond": 30` untuk `lebar_max = 50` 
