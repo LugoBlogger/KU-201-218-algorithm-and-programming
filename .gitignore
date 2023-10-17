@@ -1,3 +1,6 @@
 .vscode
 
 figures/*.bkp
+figures/*.dtmp
+
+demo-project.md

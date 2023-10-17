@@ -99,7 +99,8 @@ algoritma yang dirasa sulit jika menggunakan bentuk perulangan.
    masukan dari pengguna berupa tinggi pola tersebut.
 
 
-
+yang mengerjakan soal di slide
+Dimas (11231021)
 
 
 
