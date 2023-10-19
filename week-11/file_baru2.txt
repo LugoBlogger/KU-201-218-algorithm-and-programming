@@ -1,0 +1,6 @@
+Halo, baris pertama file yang saya buat
+Ini baris ke-2
+Ini baris ke-3
+Ini baris ke-4
+Ini baris ke-5
+Ini baris ke-6

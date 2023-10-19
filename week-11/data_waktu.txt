@@ -1,0 +1,5 @@
+NIM, waktu
+11, 3 min 4 sec
+22, 1 min 1 sec
+33, 2 min 30 sec
+44, 6 min 7 sec
