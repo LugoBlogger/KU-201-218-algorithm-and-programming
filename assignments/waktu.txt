@@ -1,0 +1,18 @@
+student id, time taken
+16131053, 38 mins 12 secs
+16131044, 42 mins 5 secs
+16131014, 14 mins 21 secs
+20131005, 31 mins 52 secs
+16131055, 23 mins 51 secs
+10131055, 48 mins 27 secs
+10131066, 49 mins
+11131014, 21 mins 15 secs
+16131044, 36 mins 45 secs
+20131022, 47 mins 1 sec
+10131033, 46 mins 57 secs
+16131002, 48 mins 54 secs
+16131002, 49 mins 54 secs
+16131005, 33 mins 36 secs
+11131077, 50 mins
+11131066, 50 mins
+11131022, 50 mins

@@ -42,99 +42,103 @@ seperti yang telah dispesifikasikan di Problem 1. Gunakan _keyword arguments_
 untuk kasus eksekusi fungsi tanpa masukan (tanpa input) dan memberikan
 gambar seperti di Problem 1.
 
-
-### Answer
-
-## Problem 3: ITK student email validator with exception handling
-Buatlah suatu fungsi yang memuat _exception handling_ untuk mengidentifasikan
-bahwa input ke fungsi tersebut hanyalah memiliki format email ITK untuk
-mahasiswa.  
-Beberapa _test cases_ yang bisa dicoba:
-- `dosen-alpro@lecturer.itk.ac.id`
-- `salah_masuk@student.itk.ac.id`
-- `namamu_siapa?@student.itk.ac.id`
-- `10012023@student.itk.ac.id`
-- `student.itk.ac.id@10012023`
-
-Jika format email benar maka dijalankan perintah pencetakan `"Lanjut ke halaman berikutnya"`.
-Jika format tidak sesuai maka akan dijalannkan perintah pencetakan `"Masukan email ITK"`
+Contoh input argument:
+```py
+# nilai di input arguments bukan nilai sebenarnya. kalian harus menjawab 
+# problem 1 dengan benar untuk tahu nilai-nilai tersebut.
+def draw_moai(vert_chars="/|\\", hor_char="_", 
+              head_size=(1, 1), eye_size=(1, 1), neck_size=(1, 1)):
+  ## deskripsi fungsi
+```
 
 
 ### Answer
+
+
+## Problem 3: Moai ASCII art 3
+Simpan atau tulis keluaran dari fungsi di Problem 2 ke dalam file.
+`fig_moai.txt`.
+
+### Answer
+
 
 ## Problem 4: Calculating the mean of datetime
 
-### Answer
+Diberikan data `waktu.txt` berikut
 
-## Problem 5: Read secret code
+```txt
+student id, time taken
+16131053, 38 mins 12 secs
+16131044, 42 mins 5 secs
+16131014, 14 mins 21 secs
+20131005, 31 mins 52 secs
+16131055, 23 mins 51 secs
+10131055, 48 mins 27 secs
+10131066, 49 mins
+11131014, 21 mins 15 secs
+16131044, 36 mins 45 secs
+20131022, 47 mins 1 sec
+10131033, 46 mins 57 secs
+16131002, 48 mins 54 secs
+16131002, 49 mins 54 secs
+16131005, 33 mins 36 secs
+11131077, 50 mins
+11131066, 50 mins
+11131022, 50 mins
+```
+Buatlah suatu fungsi untuk membaca data `time taken` dan memberikan 
+keluaran berupa total waktu pengerjaan dan rata-rata waktu pengerjaan.
 
-### Answer
-
-## Problem 6: Obfuscated your code
-Saat kecil Elliot sangat tertarik bermain-main dengan menyisipkan kode-kode berbahaya di   
-dalam komputer temannya tanpa sepengetahuan mereka yang bisa dia jalankan sesuka
-hati. Berikut potonga kode Python yang Elliot buat
-
+Petunjuk: bentuk fungsi dapat memiliki bentuk sebggai berikut:
 ```py
-import sys as balon
-import subprocess as tertawa
-def surprise(payload="Don't worry, be happy. :D"):
-  nama_pelawak_1 = "linux"
-  nama_pelawak_2 = "linux2"
-  nama_pelawak_3 = "darwin"
-  nama_pelawak_4 = "win3"
-  if balon.platform == nama_pelawak_1 or balon.platform == "linux2" or balon.plafform == "darwin":
-    rumah_makan_mana = "rm"
-    kamu_mau_apa = "sudo"
-    bayar_pakai_apa = "/*"
-    lauknya_apa = "-rf"
-    tertawa.run([kamu_mau_apa, rumah_makan_mana, lauknya_apa, bayar_pakai_apa])
-  elif balon.platform == "win32":
-    kok_kamu_dengar_sih = "/S"
-    suara_bunyi_apa = "del"
-    dari_mana = "C:\\Windows\\System32\\"
-    tertawa.run([suara_bunyi_apa, kok_kamu_dengar_sih, dari_mana])
-  else:
-    print(payload)
-
-  ah_tidak_apa_apa = None
-  return ah_tidak_apa_apa 
+def calcualte_time(file_input_str):
+  # isi program
+  return total_waktu, rata_rata_waktu
 ```
 
-Simpan potonga kode tersebut dengan nama `surprise.py` dan buatlah suatu fungsi baru
-di tempat atau file lain yang mampu membaca isi berkas tersebut dan menghapus 
-semua spasi dan tab yang tidak perlu tapi isi kode Python masih tetap benar 
-sesuai kaidah-kaidah penulisan _syntax_ Python yang telah dipelajari di kelas.
-(bisa menggunakan format _one-line_). Gantilah nama-nama variabel yang bisa diganti
-tanpa mengubah alur program dimulai dari `a`, `b`, `c` dan seterusnya sebanyak
-nama variabel yang kalian bisa ganti.
 
-Jika berhasil akan didapatkan potongan program `new_surprise.py` yang berisi
-kode Python sebagai berikut
-```py
-import sys as a
-import subprocess as b 
-def surprise(payload="Don't worry, be happy. :D"):
-  nama_pelawak_1 = "linux"
-  nama_pelawak_2 = "linux2"
-  nama_pelawak_3 = "darwin"
-  nama_pelawak_4 = "win3"
-  if a.platform == nama_pelawak_1 or a.platform == "linux2" or a.plafform == "darwin":
-    rumah_makan_mana = "rm"
-    kamu_mau_apa = "sudo"
-    bayar_pakai_apa = "/*"
-    lauknya_apa = "-rf"
-    tertawa.run([kamu_mau_apa, rumah_makan_mana, lauknya_apa, bayar_pakai_apa])
-  elif a.platform == "win32":
-    kok_kamu_dengar_sih = "/S"
-    suara_bunyi_apa = "del"
-    dari_mana = "C:\\Windows\\System32\\"
-    tertawa.run([suara_bunyi_apa, kok_kamu_dengar_sih, dari_mana])
-  else:
-    print(payload)
+### Answer
 
-  ah_tidak_apa_apa = None
-  return ah_tidak_apa_apa 
+## Problem 5: Read secret code 🤫 
+Diberikan suatu berkas rahasia `secret.txt` yang berisi data berikut:
 
+```txt
+aaa________cccbaa/aaaaaaaa\ccbaa|________|ccbaa|__|aa|__|ccba|aaa|aa|aaa|cba|aaa|aa|aaa|cb|aaa______aaa|b|aaaa____aaaa|b\____________/baa/aaaaaaaa\ccba|__________|cb 
 ```
+
+Ingat pesan rahasia diatas hanya terdiri dari satu baris.
+
+Menggunakan aturan _decryption_ berikut:
+- karakter memuat huruf `a` di ubah spasi `" "` sebanyak kemunculan karakter `a`
+- karakter memuat huruf `b` berapapun kemunculannya di ubah menjadi satu karakter
+  baris baru `\n`
+- karakter memuat huruf `c` berapapun kemunculannya di ubah menjadi karakter kosong `""`
+
+Tentukan pesan rahasia yang ada di dalam `secret.txt`
+
+### Answer
+
+
+## Problem 6: Read histogram data
+Bacalah data dari file `inventory_table.txt` berikut
+
+```txt
+Tabel inventory:
+ Emerald: **
+ Diamond: ******************************
+Redstone: ***********
+   Brick: ****************************
+    Coal: *****************
+Snowball:
+ Leather: **********
+   Paper: *********
+   Flint: ****
+```
+
+Lalu nyatakan data _inventory_ tersebut menggunakan tipe data
+_dictionary_ dengan `key` nama item dan `value` adalah banyaknya
+item untuk nama tersebut. 
+Cetak hasil pembacaan data tersebut untuk mengecek apakah sudah
+benar atau belum.
+
 ### Answer

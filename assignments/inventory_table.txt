@@ -1,0 +1,10 @@
+Tabel inventory:
+ Emerald: **
+ Diamond: ******************************
+Redstone: ***********
+   Brick: ****************************
+    Coal: *****************
+Snowball:
+ Leather: **********
+   Paper: *********
+   Flint: ****
