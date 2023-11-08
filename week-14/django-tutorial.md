@@ -42,13 +42,14 @@ This will create `mysite` directory inside `./poll-site-project/` directory with
 structure
 ```
 poll-site-project/
-├─ mysite/
-│  ├─ __init__.py
-│  ├─ settings.py
-│  ├─ urls.py
-│  ├─ asgi.py
-│  └─ wsgi.py
-└─ manage.py
+└─ mysite/
+   ├─ mysite/
+   │  ├─ __init__.py
+   │  ├─ settings.py
+   │  ├─ urls.py
+   │  ├─ asgi.py
+   │  └─ wsgi.py
+   └─ manage.py
 ```
 
 
@@ -73,17 +74,18 @@ python manage.py startapp polls
 This will create the following directory structure
 ```
 poll-site-project/
-├─ mysite/
-├─ polls/
-│  ├─ __init__.py
-│  ├─ admin.py
-│  ├─ apps.py
-│  ├─ migrations/
-│  │  └─ __init__.py
-│  ├─ models.py
-│  ├─ tests.py
-│  └─ views.py
-└─ manage.py
+└─ mysite/
+   ├─ mysite/
+   ├─ polls/
+   │  ├─ __init__.py
+   │  ├─ admin.py
+   │  ├─ apps.py
+   │  ├─ migrations/
+   │  │  └─ __init__.py
+   │  ├─ models.py
+   │  ├─ tests.py
+   │  └─ views.py
+   └─ manage.py
 ```
 
 ### Write your first view
@@ -116,7 +118,6 @@ from . import views
 urlpatterns = [
   path("", views.index, name="index"),
 ]
-
 ```
 This will set a URLconf in app level.
 
@@ -142,7 +143,121 @@ where the terminal is inside the director `poll-site-project`
 python manage.py runserver
 ```
 
-We will the following result
+You can access the `polls/view.py` using browser
+with the following address
+```
+http://127.0.0.1:8000/polls
+```
+
+If you want to access `polls/view.py` without suffix
+`polls` in the above addres, add the 
+`path("", include="polls.urls")` in `urlpatterns`
+of `mysite/urls.py`.
+
+We will have the following result
+
+<img src="./figures/django-tutorial-pt-01.png" width=600>
+
 
 
 ## Writing your first Django app, part 2
+
+### Creating models
+
+A model is a database layout with additional metadata
+
+In our poll app, we'll create two models:
+- **Questions**    
+  it has a question and a publication date
+- **Choice**   
+  it has two fields: the text of choice and a vote tally.
+
+Each **Choice** is associated with a **Question**
+
+Let us create these two models into our Polls app
+
+**`polls/models.py`**
+```py
+from django.db import models
+
+class Question(models.Model):
+  question_text = models.CharField(max_length=200)
+  pub_date = models.DateTimeField("date published")
+
+
+class Choice(models.Model):
+  question = models.ForeignKey(Question, on_delete=models.CASCADE)
+  choice_text = models.CharField(max_length=200)
+  votes = models.IntegerField(default=0)
+```
+
+The complete list of `models` attributes is 
+listed in the documentation of [Field Types](
+https://docs.djangoproject.com/en/4.2/ref/models/fields/#field-types)
+
+Note to the `ForeignKey` attribute, we have
+`on_delete=models.CASCADE`. This behaviour of deletion
+is the same as the SQL command [`ON DELETE CASCADE`](https://www.sqlite.org/foreignkeys.html).
+This is the case when you want to delete rows in 
+the child table (**Choice**) when the corresponding
+rows are deleted in the parent table (**Question**)
+
+
+### Activating models
+
+We need to tell our project the the **polls** app 
+is installed
+
+In `mysite/mysettings.py`.
+Set into the following setting
+```py
+INSTALLED_APPS = [
+  "polls.apps.PollsConfig",   # we only add this element
+  "django.contrib.admin",
+  "django.contrib.auth",
+  "django.contrib.contenttypes",
+  "django.contrib.sessions",
+  "django.contrib.messages",
+  "django.contrib.staticfiles",
+]
+```
+
+Every time you update your model, you have to 
+run the following procedure. [Fortunately, I have
+tried to change the `polls/models.py` and it updates
+automatically the database schema]
+
+- This will update how your model store the database
+  schema
+  ```sh
+  # Choose one from these options
+  python manage.py makemigrations polls # manual
+  python manage.py makemigrations       # all changes
+  ```
+
+- [Optional] To see the database schema that is automatically
+  created for you by Python
+  ```sh
+  python manage.py sqlmigrate polls 0001
+  ```
+- Apply all changes into the database
+  ```sh
+  python manage.py migrate
+  ```
+
+### Adding data to the database
+
+There are two ways to add the data to your database
+- Django database API
+- Django Admin  
+  user: admin   
+  password: t.st12345
+
+See the complete tutorial in the 
+[documentation](https://docs.djangoproject.com/en/4.2/intro/tutorial02/#playing-with-the-api)
+
+
+
+## Writing your first Django app, part 3
+
+
