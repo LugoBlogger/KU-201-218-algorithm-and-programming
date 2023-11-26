@@ -3,4 +3,6 @@
 figures/*.bkp
 figures/*.dtmp
 
+assignments/moai*
+
 demo-project.md
