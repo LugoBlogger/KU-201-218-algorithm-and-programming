@@ -7,7 +7,7 @@ Group members
 - etc.
 
 
-## Problem 1: Moai Converter: Read Moai Image 
+## Problem 1: Moai Converter: Read Moai image 
 Menggunakan fungsi [`matplotlib.pyplot.imread()`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.imread.html), 
 bacalah berkas [`images.jpeg`](./images.jpeg) sehingga didapatkan `list` tiga dimensi
 dengan ukuran 225 x 225 x 3. Angka 3 terahir di ukuran ini menyatakan _channel_
@@ -22,7 +22,7 @@ def read_image(filename):
 ```
 
 
-## Problem 2: Moai Converter: Show Moai Image
+## Problem 2: Moai Converter: Get Moai image pixels 
 Ambil salah satu _channel_ dari hasil Problem 1, misal channel _Red_, ubah
 ke dalam skala nilai 0 dan 1 dengan cara membagi nilai di dalam list dengan 255.
 
@@ -36,13 +36,14 @@ def image_to_ascii(filename):
 
 
 ## Problem 3: Moai Converter: Transform pixels  
-Diberikan _gradient characters_ yang menyatakan ukuran kecerahan dari gambar
-sebagai berikut:
+Diberikan _gradient characters_ yang digunakan untuk menyatakan ukuran 
+kecerahan dari suatu gambar sebagai berikut:
 ```py
-  char_bright_normal2 = " .:;x"
+# karakter paling kiri paling cerah, karakter paling kanan paling gelap
+char_bright_normal2 = " .:;x"
 ```
 
-Diberikan juga rentang kecerahan untuk masing-masing _gradient characters_
+Diberikan juga rentang kecerahan[^1] untuk masing-masing _gradient characters_
 sebagai berikut
 - nilai pixel `0.0 <= px < 0.3` diganti dengan karakter `x` (huruf x)
 - nilai pixel `0.3 <= px < 0.5` diganti dengan karakter `;` (titik koma)
@@ -50,11 +51,11 @@ sebagai berikut
 - nilai pixel `0.6 <= px < 0.9` diganti dengan karakter `.` (titik)
 - nilai pixel `0.9 <= px <= 1.0` diganti dengan karakter ` ` (spasi)
 
+
 Rentang tersebut dapat dinyatakan dalam bentuk list, dan dapat dilakukan penggantian
 nilai pixel pada `arr_moai_red_channel_scaled`
 ```py
-  # nilai pixels 0 <= 
-  char_bin = [0., 0.3, 0.5, 0.6, 0.9, 1.]
+char_bin = [0., 0.3, 0.5, 0.6, 0.9, 1.]
 ```
 
 
@@ -84,7 +85,8 @@ ASCII.
 
 ## Problem 4: Moai Converter: Create baseline program
 Pada bagian ini akan diberikan program dasar sebagai berikut dan beberapa
-tata letak penulisan kode program dasar
+tata letak penulisan kode program dasar. Simpan file berikut dengan 
+nama `converter.py`.
 
 ```py
 # Taruh semua library yang perlu diimport disini
@@ -160,8 +162,9 @@ gambar):
 _Petunjuk_: gunakan perintah yang di-_highlight_ warna kuning. 
 Kalian tidak perlu membuat kode baru, cukup menempatkan pada lokasi yang tepat 
 untuk program dasar di atas. Tambahkan sedikit _layout hacking_: 
-`layout_vert_left.addStretch()` dan `layout_vert_right.addStretch()`, agar
-tampilan memiliki _alignment_ yang sama. Jika ada solusi yang lebih baik
+`layout_vert_left.addStretch()`  dan `layout_vert_right.addStretch()` setelah
+widgets (QPushButton, QLabel, QLineEdit) ditambahkan pada dua layout tersebut,
+agar tampilan memiliki _alignment_ yang sama. Jika ada solusi yang lebih baik
 silahkan digunakan.
 
 ## Problem 5: Moai Converter: Create program without backend
@@ -201,3 +204,9 @@ Jika langkah diikuti dengan tepat maka akan dihasilkan program seperti berikut:
 [Opsional]: Lakukan pengembangan design tampilan program menggunakan
 [PyQt Material Design](https://github.com/zhiyiYo/QMaterialWidgets) jika
 dirasa design masih bisa diperbaiki.
+
+
+
+[^1]: Rentang kecerahan ini ditentukan dengan menggunakan histogram dan membagi
+skala secara kualitatif. Teknik yang lebih maju dapat menggunakan _clustering_
+warna yang dibahas lengkap dalam kuliah _machine learning_.
